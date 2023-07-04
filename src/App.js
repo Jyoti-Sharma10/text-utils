@@ -34,9 +34,9 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/text-utils'>
     <Routes>
-      <Route path='/' element={<>
+      <Route exact path='/text-utils' element={<>
         <Navbar mode={mode} toggleMode={toggleMode}/>
         <Alert alert={alert}/>
         <div className="container">
